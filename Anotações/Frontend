@@ -1,0 +1,80 @@
+ # FRONTEND WEB APP
+ 
+ 
+- Limpando estrutura da aplicação
+		* *remove:*
+		* *everything but index.html in public folder*
+		* *app.test.tsx*
+		* *index.css*
+		* *logo.svg*
+		* *serviceworker*
+		* *setupTests*
+- Explicando conceitos
+	+ Index.html & div#root
+	+ JSX
+	+ Componente (Header)
+	+ Propriedade
+	+ Estado e imutabilidade
+- Arquivos para download (Layout, imagens e CSS)
+- Construção do HTML da primeira página
+	+ set up app.css
+	+ set up fonts that will be used
+	+ **DISPLAY FLEX LAYOUT**
+- Configuração da navegação
+	+ npm i react-router-dom
+	+ npm install @types/react-router-dom -D
+- Construção do HTML do formulário
+- Integrando mapa no formulário
+- Buscando itens de coleta da API
+- Buscando estados e cidades do IBGE
+- Cadastro de pontos de coleta na API
+- Mensagem de sucesso
+
+
+# Concepts
+
+- document.getElementById('root')
+	+ *this selects the div tag in which the javascript will build the html structure upon using the JSX sources*
+		* *basically you the a normal html source page, and in that, you have a certain div, and using javascript, you can append new html elements to that element, and react does that, by parsing the JSX you write ( which looks like html), and that is so incredible and genious, even if simple, I can see the main feature of React, and the reason whya  team on Facebook created it*
+		
+- React is being used for microsoft office even, (online web, and VR)
+- **EMMET SHORTCUT FOR JSX/HTML**
+	+ div#someId>ul>li*5
+		* this will get you a div with an "someId" Id, an ul inside of it, and 5 li inside of that ul, AMAZING!
+		
+
+
+# Typescript
+
+-  A component in React typescript should have the React.FC type (FC = Function Component)
+	+  this will allow the component to receive parameters, more specifically props
+	
+- **Interface**
+	+ define the type of an object
+	
+interface HeaderProps {
+    banana?: string;
+}
+	+ *if you have the interrogation point, the prop is not obligatory*
+	
+
+- **Whenever we create a state for an Array OR an object, we need to manually inform the type of the stored variable**
+
+# Icon Packages
+
+- npm i react-icons
+	+ get the most popular icons
+		
+
+#React-Router-Dom Library
+
+- BrowserRouter
+	+ Route 1
+	+ Route 2
+	+ etc..
+	
+- One problem with r-r-d, is that it doesn't verify differences between / and /create-point, it goes for the first acceptable path, so we need to setup a workaround
+- so you need to put an exact flag on the Route
+
+- **Now, we need to set up the routes for it to maintain the Single Page Application principle of react**
+	+ and we do that by importing the Link component, and substitute the a tag in any html pages, because the a tag WILL redirect you to another page, but < Link> will work with routes to maintain the SPA principle

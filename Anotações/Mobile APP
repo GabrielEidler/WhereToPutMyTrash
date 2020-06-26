@@ -1,0 +1,77 @@
+
+# Mobile App
+
+- Install Expo CLI
+- Create project with Expo
+- Executing Poject
+- React Native vs React js
+	+ Elements
+	+ Styling
+- Pages Creation
+	+ Home
+	+ Map
+	+ Detail
+- Navigation Configuration
+- Searching from API's
+	+ Items
+	+ Points
+	+ Points Details
+	+ UF and City
+	
+
+# Commemorate finished application!
+[ACTIVATE FIREWORKS!!!]
+
+
+** React Native vs ReactJS*
+
+- In React Native, you don't have the usual HTML tags
+	+ View => div/section/footer etc
+	+ Text
+	
+- Style come as a tag property which receives an object with all the styles
+
+```
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Hallo, Wir Geht's Mit Dir!</Text>
+      <Text>Alles Gut?</Text>
+      <Text>Ich bin keine müde! :)</Text>
+      <Text>ICH BIN STARK</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#7159c1',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+```
+
+- There are no style inheritance
+	+ you cant put a child tag inside your style for  the mother tag
+	+ you need to style every element
+	+ each element behaves in a unique way
+
+
+
+# List Of Actions
+
+- Force Android/IOS navbar to change colors
+- Workaround for importing images
+- using expo's Google Font import
+- First you load the fonts, THEN the app
+- React Navigation
+- react-native-gesture-handler
+- Icons are already ready with Expo
+- Stack navigation
+	+ this able for you to go back the previous page
+- import navigation with buttons functionality
+- Installing maps 
+- react native SVG

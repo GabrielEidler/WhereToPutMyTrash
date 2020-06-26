@@ -1,0 +1,6 @@
+# FRONTEND
+
+
+**Creating a typescript react project**
+
+- npx create-react-app web --template=typescript

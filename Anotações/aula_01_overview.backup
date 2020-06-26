@@ -1,0 +1,54 @@
+# NEXT LEVEL WEEK
+
+**1º Dia**
+
+- Apresentar Aplicação
+- Ambiente de desenvolvimento
+	+ Node.js & NPM
+	+ Visual Studio Code
+	
+- Por que criaremos uma API?
+- Conceitos de Typescript
+- criarbases do projeto com Node.js
+- React & SPA
+- criando projetos ReactJS
+- React Native & Expo
+
+
+# API RESTful
+
+**BACKEND - NODEJS**
+
+- Business Logic
+- Database connections
+- E-mail or connection with external services
+- Authentication and Authorization
+- Cryptography and security
+
+***Backend end Pattern: *MVC**
+
+- Template Engine
+	+ /users
+		* HTML of the page with users listing
+		
+
+***Backend end Pattern: *REST**
+
+- /users
+	+ User data (JSON)
+	
+
+**FRONTEND - REACTJS && REACT NATIVE**
+
+- User Listing (HTML & CSS)
+
+
+**TYPESCRIPT**
+
+-  Javascript, but with superpower (typefication)
+-  O intelliSense falha em indentificar informações sobre uma variável por conta de não haver uma tipagem pré-determinada
+-  there's a learning curve
+-  Type inference
+	+  typescript already pre-determined most variable types
+	
+- Typescript also doesn't substitute typescript

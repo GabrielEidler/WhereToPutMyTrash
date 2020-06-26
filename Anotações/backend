@@ -1,0 +1,77 @@
+# BACKEND
+
+
+
+- Concepts
+	+ Routes and resources
+		* for example, in /users, users is the resource and /users is the route, the address of the request.
+	+ HTTP methods
+		* GET, POST, PUT and DELETE
+	+ parameter types
+		* **Req param**
+			- gets the address parameters, which identify the route's resources
+		* **Query param**
+			- the name is determined by whoever is making the request
+			- you can have many queries, so the database can receive an array for that
+		* **Req body**
+			- parameter for creation and update of information
+- Insomnia
+	+ test different types of request and params
+- Which database
+	+ SQL:
+		* Postgress, MySQL, SQLite
+			- SQLite will be used since you don't need to install anything, just use Knex.js
+			- **KNEX.JS is a powerful query builder**
+	+ noSQL: MongoDB
+- Identifying application **Entities**
+		* **TABELAS**:
+			- **points** (ponto de coleta)
+				+ name
+				+ image
+				+ email
+				+ whatsapp
+				+ latitude
+				+ longitude 
+					* (sempre que for um ponto no mapa, dividimos em duas coisas separadas)
+				+ city
+				+ uf
+			- items (itens para coleta)
+				+ title
+				+ image
+			- (N-N) relação de muitos para muitos
+				+ tabela **pivot**
+					* point-items (relacionamento dos itens que um ponto coleta)
+					* point_id
+					* item_id
+- Application functionality
+	+ cadastro de ponto de coleta
+	+ lista items de coleta
+	+ **Native app**
+		* listar pontos (filtro por cidade/estado/items)
+		* listagem de ponto de coleta específico
+- App construction
+- Adding CORS
+
+
+
+
+# Database
+
+- Migration
+	+ database's history
+	+ helps with database management
+	+ run migrations command:
+		* npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+		
+- Knex Seeds
+	+ some data is already available to the user without him having to add anything
+	
+
+**Service Pattern**
+**Repository Pattern** (Data Pattern)
+
+
+# CORS
+
+- cross origin resource sharing
+	+ define quais URL web vão ter acesso à essa API
